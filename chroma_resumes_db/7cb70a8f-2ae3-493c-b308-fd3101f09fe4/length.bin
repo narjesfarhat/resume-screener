@@ -1,0 +1,14 @@
+_set_data = this.#set_callbacks.get(parent.id);
+
+		if (parent_set_data) {
+			parent_set_data({ initial_tabs: parent.props.props.initial_tabs });
+		}
+	}
+
+	/**
+	 * Gets the current state of a component by its ID
+	 * @param id the ID of the component to get the state of
+	 * @returns the current state of the component, or null if not found
+	 */
+	async get_state(id) {
+		const _get_data = this.#get_call
